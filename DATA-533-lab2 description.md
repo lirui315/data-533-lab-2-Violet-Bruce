@@ -4,10 +4,10 @@
 This package is called padaku and it has 2 subpackages as below:
 
 
-## Sub-package 1. birth
+### Sub-package 1. *`birth`*
 
 
-### A. The sub-package birth has a module named birthdate which has class(birthinfo) and its sub-class(Year) as inheritance
+#### A. The sub-package *`birth`* has a module named *`birthdate`* which has class(*`birthinfo`*) and its sub-class(*`Year`*) as inheritance
 
 TO DO: 
 1. take birthday then returns the person's year
@@ -15,7 +15,7 @@ TO DO:
 
 **note: The Chinese zodiac is a classification scheme that assigns an animal and it represents for each year in a repeating 12 year cycle. Animals including in the cycle are rat, ox, tiger, rabbit, dragon, snake, horse, goat, monkey, rooster, dog and pig.**
 
-*Probably you can try it for yourself.*
+`Probably you can try it for yourself.`
 
 Example: 
 
@@ -27,7 +27,7 @@ Example:
 >
 >('Year is 1996', 'Chinese Zodiac is Rat')
 
-### B. The sub-package birth also has a constellation module which has a constellation function
+#### B. The sub-package *`birth`* also has a *`constellation`* module which has a constellation function
 
 TO DO:
 1. take person's birth month and date then return the person's constellation
@@ -41,9 +41,9 @@ Example:
 >Your constellation is Pisces
 
 
-## Sub-package 2. perinfo
+### Sub-package 2. perinfo
 
-### A. The sub-package perinfo has an age module which has an age function
+#### A. The sub-package *`perinfo`* has an age module which has an *`age`* function
 
 TO DO:
 1. take a person's birthday as "YYYY-MM-DD" then returns the person's age
@@ -56,7 +56,7 @@ Example:
 >
 >'The age of the person is 22'
 
-### B. The sub-package perinfo has a name module which has a lastname function and a firstname function. 
+#### B. The sub-package *`perinfo`* has a *`name`* module which has a *`lastname`* function and a *`firstname`* function. 
 
 TO DO:
 The lastname function returns the person's lastname with only the first character as captalized; the firstname function returns the person's firstname with only the first character as captalized
