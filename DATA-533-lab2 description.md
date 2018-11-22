@@ -1,5 +1,5 @@
 # Data-533-lab-2-Violet-Bruce
-533 lab2 repository for Violet(ID:86427390) and Bruce(ID:10488187)
+533 lab2 repository for (Rui Li) Violet and (Xiangyu Pei) Bruce
 
 This package is called padaku and it has 2 subpackages as below:
 
