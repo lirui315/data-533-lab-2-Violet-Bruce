@@ -348,21 +348,19 @@ $(document).ready(function () {
 <blockquote>
 <p>from padaku.perinfo import age as a</p>
 <p>a.age(“1996-3-15”)</p>
-<p>‘The age of the person is 22’</p>
+<p>‘The age of the person is 22 and 259 days’</p>
 </blockquote>
 </div>
-<div id="b.-the-sub-package-perinfo-has-a-name-module-which-has-a-lastname-function-and-a-firstname-function." class="section level4">
-<h4>B. The sub-package <em><code>perinfo</code></em> has a <em><code>name</code></em> module which has a <em><code>lastname</code></em> function and a <em><code>firstname</code></em> function.</h4>
-<p>TO DO: The lastname function returns the person’s lastname with only the first character as captalized; the firstname function returns the person’s firstname with only the first character as captalized</p>
+<div id="b.-the-sub-package-perinfo-has-a-nanur-module-which-has-a-name-function-for-name-numerology." class="section level4">
+<h4>B. The sub-package <em><code>perinfo</code></em> has a <em><code>nanur</code></em> module which has a <em><code>name</code></em> function for name numerology.</h4>
+<p>TO DO: The name function returns the person’s name numerology which is showing the person’s personality based on his/her full name.</p>
 <p>Example:</p>
 <blockquote>
-<p>from padaku.perinfo import name</p>
-<p>name.lastname(“BRUCE PEI”)</p>
-<p>(‘Lastname:’, ‘Pei’)</p>
-</blockquote>
-<blockquote>
-<p>name.firstname(“BRUCE PEI”)</p>
-<p>(‘Firstname:’, ‘Bruce’)</p>
+<p>from padaku.perinfo import nanur as n</p>
+<p>n.name(“Bruce Pei”)</p>
+<p>(‘Numerology magic for Bruce Pei’, ‘Responsibility, protection, nurturing, community, balance, and sympathy’)</p>
+<p>n.name(“Violet Li”)</p>
+<p>(‘Numerology magic for Violet Li’, ‘Values foundation, order, service, struggle against limits, and steady growth’)</p>
 </blockquote>
 </div>
 </div>
