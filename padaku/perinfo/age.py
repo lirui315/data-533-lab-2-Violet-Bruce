@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[19]:
+# In[16]:
 
 
 def age(time):
@@ -9,11 +9,12 @@ def age(time):
     t=datetime.strptime(str(time),"%Y-%m-%d")
     now = datetime.now()
     age=int((now-t).days/365)
-    return 'The age of the person is %s'%age
+    days=int((now-t).days%365)
+    return 'The age of the person is {} and {} days'.format(age,days)
 
 
-# In[20]:
+# In[17]:
 
 
-age("1996-10-10")
+age("1996-03-15")
 

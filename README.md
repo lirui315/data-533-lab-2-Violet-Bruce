@@ -54,21 +54,21 @@ Example:
 >
 >a.age("1996-3-15")
 >
->'The age of the person is 22'
+>'The age of the person is 22 and 259 days'
 
-#### B. The sub-package *`perinfo`* has a *`name`* module which has a *`lastname`* function and a *`firstname`* function. 
+#### B. The sub-package *`perinfo`* has a *`nanur`* module which has a *`name`* function for name numerology.
 
 TO DO:
-The lastname function returns the person's lastname with only the first character as captalized; the firstname function returns the person's firstname with only the first character as captalized
+The name function returns the person's name numerology which is showing the person's personality based on his/her full name. 
 
 Example: 
 
->from padaku.perinfo import name
+>from padaku.perinfo import nanur as n
 >
->name.lastname("BRUCE PEI")
+>n.name("Bruce Pei")
 >
->('Lastname:', 'Pei')
-
->name.firstname("BRUCE PEI")
+>('Numerology magic for Bruce Pei', 'Responsibility, protection, nurturing, community, balance, and sympathy')
 >
->('Firstname:', 'Bruce')
+>n.name("Violet Li")
+>
+>('Numerology magic for Violet Li', 'Values foundation, order, service, struggle against limits, and steady growth')
