@@ -7,10 +7,13 @@ This package is called padaku and it has 2 subpackages as below:
 ### Sub-package 1. *`birth`*
 
 
-#### A. The sub-package *`birth`* has a module named *`birthdate`* which has class(*`birthinfo`*) and its sub-class(*`Year`*) as inheritance
+#### A. The sub-package *`birth`* has a module named *`birthdate`* which has class(*`birthinfo`*) and it has  sub-class(*`Year`*) and (*`Month`*) as inheritance
+
+*`Year`*
 
 TO DO: 
-1. take birthday then returns the person's year
+1. take birthday then returns the person's birth year
+
 2. chinese_zodiac return the person's Chinese zodiac
 
 **note: The Chinese zodiac is a classification scheme that assigns an animal and it represents for each year in a repeating 12 year cycle. Animals including in the cycle are rat, ox, tiger, rabbit, dragon, snake, horse, goat, monkey, rooster, dog and pig.**
@@ -27,7 +30,8 @@ Example:
 >
 >('Year is 1996', 'Chinese Zodiac is Rat')
 
-#### B. The sub-package *`birth`* also has a *`constellation`* module which has a constellation function
+
+*`Month`*
 
 TO DO:
 1. take person's birth month and date then return the person's constellation
@@ -36,9 +40,25 @@ Example:
 
 >from padaku.birth import constellation as c
 >
->print(c.constellation(3,15))
+>print(c.constellation(10,25))
 >
->Your constellation is Pisces
+>Your constellation is Scorpio
+
+
+#### B. The sub-package *`birth`* also has a *`number`* module which has a life_path_number function
+
+TO DO: 
+1. Group the numbers of birthdate together before adding
+
+2. Do not reduce the Master Numbers of 11 or 22 to single digits until the final calculation.
+
+Example:
+
+>from padaku.birth import number as n
+>
+>print(n.life_path_number(10,25))
+>
+>Your life path number is 9
 
 
 ### Sub-package 2. perinfo
