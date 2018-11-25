@@ -53,7 +53,33 @@ class Year(Birthinfo):
 
 
 # In[37]:
-
-
+class Month(Birthinfo):
+    def __init__(self,year,month,date):
+        Birthinfo.__init__(self,year,month,date)
+    def constellation(self):
+        if (self.month==3 and self.date>=21) or (self.month==4 and self.date<=19):
+            return "Your constellation is Aries"
+        elif (self.month==4 and self.date>=20) or (self.month==5 and self.date<=20):
+            return "Your constellation is Taurus"
+        elif (self.month==5 and self.date>=21) or (self.month==6 and self.date<=21):
+            return "Your constellation is Gemini"
+        elif (self.month==6 and self.date>=22) or (self.month==7 and self.date<=22):
+            return "Your constellation is Cancer"    
+        elif (self.month==7 and self.date>=23) or (self.month==8 and self.date<=22):
+            return "Your constellation is Leo"
+        elif (self.month==8 and self.date>=23) or (self.month==9 and self.date<=22):
+            return "Your constellation is Virgo"
+        elif (self.month==9 and self.date>=23) or (self.month==10 and self.date<=23):
+            return "Your constellation is Libra"
+        elif (self.month==10 and self.date>=24) or (self.month==11 and self.date<=22):
+            return "Your constellation is Scorpio" 
+        elif (self.month==11 and self.date>=23) or (self.month==12 and self.date<=21):
+            return "Your constellation is Sagittarius"
+        elif (self.month==12 and self.date>=22) or (self.month==1 and self.date<=19):
+            return "Your constellation is Capricornus"
+        elif (self.month==1 and self.date>=20) or (self.month==2 and self.date<=18):
+            return "Your constellation is Aquarius"
+        else:
+            return "Your constellation is Pisces"
 
 

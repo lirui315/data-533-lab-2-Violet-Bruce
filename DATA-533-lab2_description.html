@@ -315,9 +315,13 @@ $(document).ready(function () {
 <p>This package is called padaku and it has 2 subpackages as below:</p>
 <div id="sub-package-1.-birth" class="section level3">
 <h3>Sub-package 1. <em><code>birth</code></em></h3>
-<div id="a.-the-sub-package-birth-has-a-module-named-birthdate-which-has-classbirthinfo-and-its-sub-classyear-as-inheritance" class="section level4">
-<h4>A. The sub-package <em><code>birth</code></em> has a module named <em><code>birthdate</code></em> which has class(<em><code>birthinfo</code></em>) and its sub-class(<em><code>Year</code></em>) as inheritance</h4>
-<p>TO DO: 1. take birthday then returns the person’s year 2. chinese_zodiac return the person’s Chinese zodiac</p>
+<div id="a.-the-sub-package-birth-has-a-module-named-birthdate-which-has-classbirthinfo-and-it-has-sub-classyear-and-month-as-inheritance" class="section level4">
+<h4>A. The sub-package <em><code>birth</code></em> has a module named <em><code>birthdate</code></em> which has class(<em><code>birthinfo</code></em>) and it has sub-class(<em><code>Year</code></em>) and (<em><code>Month</code></em>) as inheritance</h4>
+<p><em><code>Year</code></em></p>
+<p>TO DO: 1. take birthday then returns the person’s year</p>
+<ol start="2" style="list-style-type: decimal">
+<li>chinese_zodiac return the person’s Chinese zodiac</li>
+</ol>
 <p><strong>note: The Chinese zodiac is a classification scheme that assigns an animal and it represents for each year in a repeating 12 year cycle. Animals including in the cycle are rat, ox, tiger, rabbit, dragon, snake, horse, goat, monkey, rooster, dog and pig.</strong></p>
 <p><code>Probably you can try it for yourself.</code></p>
 <p>Example:</p>
@@ -327,15 +331,26 @@ $(document).ready(function () {
 <p>print(p1.chinese_zodiac())</p>
 <p>(‘Year is 1996’, ‘Chinese Zodiac is Rat’)</p>
 </blockquote>
-</div>
-<div id="b.-the-sub-package-birth-also-has-a-constellation-module-which-has-a-constellation-function" class="section level4">
-<h4>B. The sub-package <em><code>birth</code></em> also has a <em><code>constellation</code></em> module which has a constellation function</h4>
+<p><em><code>Month</code></em></p>
 <p>TO DO: 1. take person’s birth month and date then return the person’s constellation</p>
 <p>Example:</p>
 <blockquote>
 <p>from padaku.birth import constellation as c</p>
-<p>print(c.constellation(3,15))</p>
-<p>Your constellation is Pisces</p>
+<p>print(c.constellation(10,25))</p>
+<p>Your constellation is Scorpio</p>
+</blockquote>
+</div>
+<div id="b.-the-sub-package-birth-also-has-a-number-module-which-has-a-life_path_number-function" class="section level4">
+<h4>B. The sub-package <em><code>birth</code></em> also has a <em><code>number</code></em> module which has a life_path_number function</h4>
+<p>TO DO: 1. Group the numbers of birthdate together before adding</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Do not reduce the Master Numbers of 11 or 22 to single digits until the final calculation.</li>
+</ol>
+<p>Example:</p>
+<blockquote>
+<p>from padaku.birth import number as n</p>
+<p>print(n.life_path_number(10,25))</p>
+<p>Your life path number is 9</p>
 </blockquote>
 </div>
 </div>
